@@ -1,0 +1,14 @@
+{
+  "name": "course",
+  "version": "1.0.0",
+  "description": "This project aims to provide courses to learn web development.",
+  "main": "http.js",
+  "scripts": {
+    "test": "node http.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it": "^13.0.1"
+  }
+}

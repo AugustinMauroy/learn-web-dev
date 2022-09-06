@@ -1,0 +1,71 @@
+/*Colors and fonts*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+header {
+    background-color: #7CB342;
+    padding: 10px;
+}
+header > button{
+    color: #CFD8DC;
+    background-color: #1B5E20;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.where_to_start{
+    text-align: center;
+    background-color: #0d1721;
+    color: #ffffff;
+    padding-top: 20px;
+}
+.where_to_start > h1{
+    padding: 20px;
+}
+.where_to_start > a{
+    color: #CFD8DC;
+}
+.left_nav{
+    background-color: #0d1721;
+    color: #ffffff;
+    float:left;
+    position: fixed;
+    text-align: center;
+    width: 15%;
+    height: 100%;
+}
+.left_nav a{
+    color: #ffffff;
+}
+.content{
+    width: 85%;
+    float:right;
+}
+.content > *{
+    padding-left: 10px;
+}
+/*Responsive size*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

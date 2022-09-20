@@ -1,3 +1,8 @@
+---
+title: "what_is_html"
+display_title: "Qu'est ce que l'html ?"
+lang: "fr"
+---
 # Qu'est ce que l'html ?
 - HTML est l'abréviation de Hyper Text Markup Language
 - HTML est le langage de balisage standard pour la création de pages Web.

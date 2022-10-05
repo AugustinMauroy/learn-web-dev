@@ -6,26 +6,29 @@
         <meta name="description" content="">
         <meta name="author" content="Augustin">
         <title>Apprendre le web développement.</title>
-        <link href="../css/style.css" rel="stylesheet">
-        <script src="../js/index.js"></script>
-        <script src="../js/I18n.js"></script>
+        <link href="./css/style.css" rel="stylesheet">
+        <script src="./js/index.js"></script>
+        <script src="./js/I18n.js"></script>
     </head>
-    <header>
-            <button onclick="document.location='/'">Home</button>
+    <body>
+        <header>
+            <button onclick="document.location='/'" disabled>Home</button>
             <button onclick="document.location='/html/what_is_html'">Html</button>
             <button onclick="document.location='/css/what_is_css'">CSS</button>
             <button onclick="document.location='/js/what_is_js'">JavaScript</button>
-            <button onclick="document.location='/nodejs/what_is_node'">Nodejs</button>
+            <button onclick="document.location='/nodejs/intro_node'">Nodejs</button>
             <button onclick="document.location='/sql/what_is_sql'">sql</button>
             <!-- I18n W.I.P. -->
         <!-- 
             <img src="/img/I18n.svg" alt="i18n">
-            <div>
+            <div style="display: none;">
+                <ul>
+                    <li><a></a><li>
+                </ul>
             </div>
         -->
-    </header>
-    <body>
-        <div class="where_to_start">
+        </header>
+        <section class="where_to_start">
             <h1>Apprendre le développement web.</h1>
             <h2>Où commencer?</h2>
             <h3>HTML</h3>
@@ -43,11 +46,16 @@
             <h3>SQL</h3>
             <p>SQL est un langage standard pour le stockage, la manipulation et la récupération des données dans les bases de données.</p>
             <a href="/sql/what_is_sql">Commencer à apprendre le SQL</a>
-        </div>
+        </section>
         <!-- Vectoriel du la vague -->
         <svg style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" style="fill: #0d1721;"></path>
         </svg>
+        <section>
+            <h2>Notre blog</h2>
+            <p>Sur le blog vous pouvez trouvez les nouvauter du site, et des petit tutoriel.</p>
+            <a href="/blog">Accéder au blog</a>
+        </section>
     </body>
     <footer>
         <!-- Si le browser ne support pas le javascript -->

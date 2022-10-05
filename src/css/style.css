@@ -47,13 +47,14 @@ header > button{
 .left_nav a{
     color: #ffffff;
 }
-main{
+article{
     width: 85%;
     float:right;
 }
-main > *{
+article>*{
     padding-left: 10px;
 }
+
 /*Responsive size*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

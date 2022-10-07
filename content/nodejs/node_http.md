@@ -41,6 +41,20 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(port, () => {
-  console.log(`Serveur function au port: ${port}`)
+  console.log(`Serveur running on localhost:${port}`)
 })
 ```
+
+La constante 'port' définit le port de communication http de notre serveur.
+Par la suite nous définitisons la constante server qui est notre serveur http.
+Nous définison le port grâce à la function `server.listen()` avec le paramètre `port` ce qui dit que notre serveur http communique sur le port 8080.
+
+Dans la fonction `http.createServer` nous allons écrire nos requête et nos réponse.
+Dans ce cas précis nous répondons simplement.
+`res.statusCode` définit le code http
+`res.setHeader` définit le `Content-Type`.
+`res.end` envois les donné au browser.
+
+## Voilà
+
+Nous avons crée un serveur http.

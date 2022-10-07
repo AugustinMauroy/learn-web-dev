@@ -17,6 +17,7 @@ Grâce à l'html, le css, le javascript. Puis nodejs pour le back-end.
 - Ajouter la traduction du système I18n
 - Ajouter toggle dark mode
 - Ajouter le system pour ordonner la left nav
+    - Ajouter nex ent prev au cours
 - Update les `<head>`
 - Update les cours pour qu'il fonctionne avec le lecteur
 - Ajouter about section 

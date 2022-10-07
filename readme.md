@@ -27,12 +27,12 @@ Through html, css, javascript. Then nodejs for the back-end.
 
 Use this command to install the dependencies:
 
-``bash
+```bash
 npm install
 ```
 
 And to test:
 
-``bash
+```bash
 npm start
 ```

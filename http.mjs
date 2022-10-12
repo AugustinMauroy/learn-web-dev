@@ -4,7 +4,7 @@ import url                                  from 'url';
 import { readFile, readFileSync }           from 'fs';
 import { course_gen }                       from './course.mjs'; /*Generation of course with markdown*/
 import { blog_index_gen }                   from './blog_index.mjs';
-import { blog_content_gen }                  from './blog_content.mjs';
+import { blog_content_gen }                 from './blog_content.mjs';
 
 
 /*Creation of server http*/

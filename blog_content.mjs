@@ -25,11 +25,15 @@ async function blog_content_gen(call){
                         <button onclick="document.location='/sql/what_is_sql'">sql</button>
                     </header>
                     <main>
-                        ${content(call)}
+                        <h1>${html_title(call)}</h1>
+                        <article>
+                            ${content(call)}
+                        </article>
                     </main>
                     <footer>
                         <noscript>Votre navigateur n'accepte pas le JavaScript. Certaines fonctionnalités ne serons pas disponible.</noscript>
                         <p>Date de sortie: <time>${get_time(call)}</time></p>
+                        <a href="/blog">Retour à la liste des post</a>
                     </footer>
                 </body>
             </html>`;

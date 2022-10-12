@@ -6,7 +6,5 @@ date: "04-10-20"
 lang: "fr"
 ---
 
-# Arriver du blog sur le site.
-
 Sur le blog vous pourrez trouvez toute sorte de petit tutoriel ou des news du site.
 Ou de simple information sur le web développement.

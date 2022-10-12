@@ -9,23 +9,26 @@ Grâce à l'html, le css, le javascript. Puis nodejs pour le back-end.
 
 ## choses à faire
 
-- Écrire les cours
+- Rédiger des cours
 - CSS
-    - Ajouter les constante de couleur
-    - Ajouter le responsive 
-    - update pour supporter les blog
-- Ajouter la traduction du système I18n
-- Ajouter toggle dark mode
-- Ajouter le system pour ordonner la left nav
+    - Ajouter des constantes de couleur
+    - Ajouter du responsive 
+    - Mise à jour pour supporter les blogs
+    - Mettre à jour le style 404
+    - Hover dropdown I18n
+    - Mise à jour du `<footer>`.
+- Ajout de la traduction du système I18n
+- Ajout du toggle dark mode
+- Ajouter un système pour ordonner le nav de gauche (créer json avec les métadonnées et le fichier -> créer la `lef_nav`)
     - Ajouter nex ent prev au cours
-- Update les `<head>`
-- Update les cours pour qu'il fonctionne avec le lecteur
-- Ajouter about section 
-- Ajouter contact section
+- Mettre à jour le `<head>`
+- Ajouter la section about 
+- Ajouter la section contact
 - Ajouter des quiz
-- Ajouter des "exercice"
-- Écrire code de conduite
-- Update les `<footer>`
+- Ajouter une section "exercices
+    - Génération automatique d'exercices 
+- Rédiger un code de conduite
+- Mettre à jour le `<footer>`.
 
 # Pour teste le projet en locale
 

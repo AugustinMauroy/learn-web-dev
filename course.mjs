@@ -93,7 +93,7 @@ function left_nav(content){
 function html_title(type,path){
     var rawMd = readFileSync(`content/${type}/${path}.md`, 'utf8', (err, data)=>{
         if(err){
-            return 'error'
+            return 'Error'
         }else{
             return data
         }

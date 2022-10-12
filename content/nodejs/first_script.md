@@ -6,16 +6,19 @@ lang: "fr"
 
 # Premier script avec nodejs
 
-Nos script peuvent être écrit dans des fichier `js` ou `mjs`. 
-Cela évidemment un petit peux la syntax mais la logic reste la même.
+Nos scripts peuvent être écrits dans des fichiers `.js` ou `.mjs`. 
+Cela évidemment peut changer un petit peu la syntax mais la logic reste la même.
 
 ## Qu'est-ce qu'un module dans Node.js ?
+
 Considérez que les modules sont les mêmes que les bibliothèques JavaScript.
 Un ensemble de fonctions que vous voulez inclure dans votre application.
 
 ## Les modules intégrés à nodejs
+
 Node.js possède un ensemble de modules intégrés que vous pouvez utiliser sans aucune installation supplémentaire.
 Comme :
+
 - `http`
 - `url`
 - `path`
@@ -34,11 +37,11 @@ Voici le script
 const pi = 3.14159265359;
 var rayon = 10;
 
-function calcule_rayon(){
+function calcul_aire(){
     return pi*rayon**2
 };
 
-console.log(calcule_rayon());
+console.log(calcul_aire());
 ```
 
 Après avoir écrit se script dans votre fichier javascript. Pour exécuter votre code il faut fait:
@@ -50,4 +53,4 @@ node index.js
 Vous obtiendrai:
 314.159265359
 
-Voilà vous avez vu comment crée un script javascript et l’exécuter avec nodejs.
+Voilà vous avez vu comment créer un script javascript et l’exécuter avec nodejs.

@@ -8,7 +8,7 @@ import { blog_content_gen }                  from './blog_content.mjs';
 
 
 /*Creation of server http*/
-const server = http.createServer(async function(req, res) {  
+const server = http.createServer(async (req,res)=>{  
     var path = url.parse(req.url).pathname;
     let routes = await get_routes();
     
@@ -20,7 +20,7 @@ const server = http.createServer(async function(req, res) {
     }if(routes.path !== undefined){
         res.statusCode = 200;
         res.setHeader('Content-Type', routes.content_type);
-        readFile(routes.path, 'utf8', (err, data) => {
+        readFile(routes.path, 'utf8', (err, data)=>{
             if (err) {
               res.end(error_404);
             }else{
@@ -39,16 +39,9 @@ const server = http.createServer(async function(req, res) {
         let raw_routes = await get_raw_routes();
         for (let i = 0; i < raw_routes.length; i++) {
             if (path === raw_routes[i].call){
-                return{
-                    "path" : raw_routes[i].path,
-                    "content_type" : raw_routes[i].content_type
-                }
+                return raw_routes[i]
             }if(path === raw_routes[i].function_call){
-                return{
-                "function_name" : raw_routes[i].function_name,
-                "function_arg" : raw_routes[i].function_arg,
-                "content_type" : raw_routes[i].content_type
-            }
+                return raw_routes[i]
             }
         }
         return 404;
@@ -65,7 +58,7 @@ async function get_raw_routes(){
 }
 
 /*Get data from 404.html*/
-const error_404 = readFileSync(`./content/404.html`,(err,data)=>{
+const error_404 = readFile(`./content/404.html`,(err,data)=>{
     if (err){
         return '<h1>404</h1>'
     }else{

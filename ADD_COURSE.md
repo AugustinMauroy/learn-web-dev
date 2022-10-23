@@ -8,6 +8,6 @@ lang: "fr"
 ---
 ```
 
-title must be name of file
-display_title cant be in language but I18n system don't work
+title **must** be name of file
+display_title cant be in language but I18n system don't work (its don't add)
 lang stay fr for moment wait I18n system

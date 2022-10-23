@@ -1,5 +1,5 @@
 ---
-version: 'release'
+version: 'out-of-date'
 ---
 
 # Course site project
@@ -30,7 +30,7 @@ Through html, css, javascript. Then nodejs for the back-end.
 - Write code of conduct
 - Update the `<footer>`
 
-# To test the project locally
+## To test the project locally
 
 Use this command to install the dependencies:
 

@@ -1,5 +1,5 @@
 /*Importation des modules*/
-import { readdirSync, readFileSync }    from 'fs';
+import { readFileSync }    from 'fs';
 import path                             from 'path';
 import mdMeta                           from 'markdown-it-meta';
 import mdImport                         from 'markdown-it';
@@ -13,6 +13,7 @@ async function blog_content_gen(call){
                     <meta charset="utf-8"/>
                     <title>${html_title(call)}</title>
                     <link rel="stylesheet" href="../css/style.css"/>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
                     <script src="../js/index.js"></script>
                 </head>
                 <body>
@@ -35,6 +36,8 @@ async function blog_content_gen(call){
                         <p>Date de sortie: <time>${get_time(call)}</time></p>
                         <a href="/blog">Retour à la liste des post</a>
                     </footer>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+                    <script>hljs.highlightAll();</script>
                 </body>
             </html>`;
 };

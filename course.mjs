@@ -13,6 +13,7 @@ async function course_gen(call_lang, call_type){
                     <meta charset="utf-8"/>
                     <title>${html_title(call_lang, call_type)}</title>
                     <link rel="stylesheet" href="../css/style.css"/>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
                     <script src="../js/index.js"></script>
                 </head>
                 <body>
@@ -33,6 +34,8 @@ async function course_gen(call_lang, call_type){
                             ${content(call_lang, call_type)}
                         </article>
                     </main>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+                    <script>hljs.highlightAll();</script>
                 </body>
             </html>`;
 };
@@ -63,6 +66,8 @@ function left_nav_tile(title){
         return "NodeJS";
     case 'sql':
         return "Le sql";
+    case undefined:
+        return "404"
     default:
         return "404";
     };

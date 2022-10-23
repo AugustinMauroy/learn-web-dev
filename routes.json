@@ -59,6 +59,12 @@
         "content_type" : "text/html"
     },
     {
+        "function_call" : "/blog/highlight_js",
+        "function_name" : "blog_content_gen",
+        "function_arg" : ["'highlight_js'"],
+        "content_type" : "text/html"
+    },
+    {
         "call" : "/js/index.js",
         "path" : "./src/js/index.js",
         "content_type" : "text/javascript"

@@ -46,6 +46,12 @@
         "content_type" : "text/html"
     },
     {
+        "function_call" : "/nodejs/fs_http",
+        "function_name" : "course_gen",
+        "function_arg" : ["'nodejs'","'fs_http'"],
+        "content_type" : "text/html"
+    },
+    {
         "function_call" : "/sql/what_is_sql",
         "function_name" : "course_gen",
         "function_arg" : ["'sql'","'what_is_sql'"],

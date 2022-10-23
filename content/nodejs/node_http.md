@@ -41,18 +41,18 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(port, () => {
-  console.log(`Serveur running on localhost:${port}`)
+  console.log(`Serveur running on http://localhost:${port}`)
 })
 ```
 
 La constante 'port' définit le port de communication http de notre serveur.
-Par la suite nous définitisons la constante server qui est notre serveur http.
-Nous définison le port grâce à la function `server.listen()` avec le paramètre `port` ce qui dit que notre serveur http communique sur le port 8080.
+Par la suite nous définitions la constante server qui est notre serveur http.
+Nous définissons le port grâce à la function `server.listen()` avec le paramètre `port` ce qui dit que notre serveur http communique sur le port 8080.
 
 Dans la fonction `http.createServer` nous allons écrire nos requête et nos réponse.
 Dans ce cas précis nous répondons simplement.
 `res.statusCode` définit le code http
-`res.setHeader` définit le `Content-Type`.
+`res.setHeader` définit le `Content-Type`. Pour les personne voulant connaître la liste des content type juste [Ici](https://fr.wikipedia.org/wiki/Type_de_médias).
 `res.end` envois les donné au browser.
 
 ## Voilà

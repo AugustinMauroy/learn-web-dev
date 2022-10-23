@@ -45,3 +45,14 @@ Et par la suite il faut exécuter cette commande:
 ```bash
 npm start
 ```
+
+## Docker
+Install node dependencies
+```bash
+docker run -v $(pwd):/app learnweb npm install
+```
+
+Start project
+```bash
+docker-compose up -d
+```

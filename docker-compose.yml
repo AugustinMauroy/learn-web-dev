@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    image: learnweb
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - "8181:8080"

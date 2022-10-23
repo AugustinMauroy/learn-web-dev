@@ -12,4 +12,6 @@ lang: "fr"
 <h1>Salut tout le monde!</h1>
 ```
 
+Un de ses avantages c'est d'être open-source. Et bien sur simple d'utilisation.
+
 Pour les personne intéresser par `highlight.js` vous pouvez allez sur ce [site](https://highlightjs.org).

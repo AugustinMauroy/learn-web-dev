@@ -15,9 +15,9 @@ Les clients HTTP les plus connus sont les navigateurs Web. Il est aussi utilisé
 
 ## Premier "Hello world"
 
-Pour notre premier serveur http nous allons crée un fichier en `.mjs` qui vas s’appeler `index.mjs`(Bien évidemment que vous pouvez l'appeler comme bon vous semble). 
+Pour notre premier serveur http nous allons crée un fichier en `.mjs` qui vas s’appeler `index.mjs`(Bien évidemment que vous pouvez l'appeler comme bon vous semble).
 
-### La première étape est d'importer les modules.
+### La première étape est d'importer les modules
 
 Pour cela nous allons ouvrir notre fichier index.mjs dans notre éditeur de text ou de code.
 Et insérer cela :

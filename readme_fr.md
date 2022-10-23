@@ -6,6 +6,7 @@ version: 'release'
 
 Ce projet vise à fournir des cours pour apprendre le développement web.
 Grâce à l'html, le css, le javascript. Puis nodejs pour le back-end.
+
 ## choses à faire
 
 - Rédiger des cours
@@ -46,15 +47,15 @@ Et par la suite il faut exécuter cette commande:
 npm start
 ```
 
-## Docker
+## Et avec Docker
 
-Install node dependencies
+Utiliser cette commande pour installer les dépendance:
 
 ```bash
 docker run -v $(pwd):/app learnweb npm install
 ```
 
-Start project
+Et par la suite il faut exécuter cette commande:
 
 ```bash
 docker-compose up -d

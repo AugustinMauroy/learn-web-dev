@@ -43,3 +43,17 @@ And to test:
 ```bash
 npm start
 ```
+
+## To test with Docker
+
+Install node dependencies
+
+```bash
+docker run -v $(pwd):/app learnweb npm install
+```
+
+Start project
+
+```bash
+docker-compose up -d
+```

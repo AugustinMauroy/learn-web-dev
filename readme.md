@@ -9,26 +9,26 @@ Through html, css, javascript. Then nodejs for the back-end.
 
 ## things to do
 
-- Write courses
-- CSS
-    - Adding color constants
-    - Add responsive 
-    - update to support blogs
-    - Update 404 style
-    - Hover dropdown I18n
-    - Update le `<footer>`
-- Add translation of I18n system
-- Add toggle dark mode
-- add system to order left nav (create json withe metadata and file -> create the left nav)
-    - Add nex ent prev to course
-- Update the `<head>`
-- Add about section 
-- Add contact section
-- Add quizzes
-- Add "exercise" section
-    - Automatic generation of exercises 
-- Write code of conduct
-- Update the `<footer>`
+* Write courses
+* CSS
+* Adding color constants
+  * Add responsive
+  * update to support blogs
+  * Update 404 style
+  * Hover dropdown I18n
+  * Update le `<footer>`
+* Add translation of I18n system
+* Add toggle dark mode
+* add system to order left nav (create json withe metadata and file -> create the left nav)
+  * Add nex ent prev to course
+* Update the `<head>`
+* Add about section
+* Add contact section
+* Add quizzes
+* Add "exercise" section
+  * Automatic generation of exercises
+* Write code of conduct
+* Update the `<footer>`
 
 ## To test the project locally
 

@@ -1,5 +1,5 @@
 ---
-version: 'out-of-date'
+version: 'release'
 ---
 
 # Course site project

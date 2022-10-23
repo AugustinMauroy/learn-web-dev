@@ -88,5 +88,25 @@
         "call" : "/img/I18n.svg",
         "path" : "./src/img/I18n.svg",
         "content_type" : "image/svg+xml"
+    },
+    {
+        "call" : "/img/html.svg",
+        "path" : "./src/img/html.svg",
+        "content_type" : "image/svg+xml"
+    },
+    {
+        "call" : "/img/css.svg",
+        "path" : "./src/img/css.svg",
+        "content_type" : "image/svg+xml"
+    },
+    {
+        "call" : "/img/js.svg",
+        "path" : "./src/img/js.svg",
+        "content_type" : "image/svg+xml"
+    },
+    {
+        "call" : "/img/node.svg",
+        "path" : "./src/img/node.svg",
+        "content_type" : "image/svg+xml"
     }
 ]

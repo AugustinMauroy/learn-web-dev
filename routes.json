@@ -81,6 +81,12 @@
         "content_type" : "text/html"
     },
     {
+        "function_call" : "/blog/ecma",
+        "function_name" : "blog_content_gen",
+        "function_arg" : ["'ecma'"],
+        "content_type" : "text/html"
+    },
+    {
         "call" : "/js/index.js",
         "path" : "./src/js/index.js",
         "content_type" : "text/javascript"

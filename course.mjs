@@ -35,6 +35,9 @@ async function course_gen(call_lang, call_type){
                             ${content(call_lang, call_type)}
                         </article>
                     </main>
+                    <footer>
+                        <noscript>Votre navigateur n'accepte pas le JavaScript. Certaines fonctionnalités ne serons pas disponible.</noscript>
+                    </footer>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
                     <script>hljs.highlightAll();</script>
                 </body>

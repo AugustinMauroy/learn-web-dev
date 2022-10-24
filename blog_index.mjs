@@ -12,7 +12,8 @@ async function blog_index_gen(){
                 <head>
                     <meta charset="utf-8"/>
                     <title>Blog</title>
-                    <link rel="stylesheet" href="../css/style.css"/>
+                    <link rel="stylesheet" href="/css/style.css"/>
+                    <link href="./css/theme.css" rel="stylesheet">
                     <script src="../js/index.js"></script>
                 </head>
                 <body>

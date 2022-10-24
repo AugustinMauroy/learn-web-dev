@@ -102,6 +102,11 @@
         "content_type" : "text/css"
     },
     {
+        "call" : "/css/theme.css",
+        "path" : "./src/css/theme.css",
+        "content_type" : "text/css"
+    },
+    {
         "call" : "/img/I18n.svg",
         "path" : "./src/img/I18n.svg",
         "content_type" : "image/svg+xml"

@@ -14,6 +14,7 @@ async function course_gen(call_lang, call_type){
                     <title>${html_title(call_lang, call_type)}</title>
                     <link rel="icon" type="image/svg+xml" href="${icon(call_lang)}" sizes="any">
                     <link rel="stylesheet" href="/css/style.css"/>
+                    <link rel="stylesheet" href="/css/theme.css"/>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
                     <script src="/js/index.js"></script>
                 </head>

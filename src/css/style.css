@@ -1,12 +1,7 @@
-/*Colors and fonts*/
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
 body{
     margin: 0;
 }
 header {
-    background-color: #7CB342;
     padding: 10px;
 }
 header > img[alt="i18n"]{
@@ -14,8 +9,6 @@ header > img[alt="i18n"]{
     float: right;
 }
 header > button{
-    color: #CFD8DC;
-    background-color: #1B5E20;
     border-radius: 10px;
     border: none;
     text-align: center;
@@ -25,28 +18,19 @@ header > button{
 }
 .where_to_start{
     text-align: center;
-    background-color: #0d1721;
-    color: #ffffff;
     padding-top: 20px;
 }
 .where_to_start > h1{
     padding: 20px;
 }
-.where_to_start > a{
-    color: #CFD8DC;
-}
 .left_nav{
-    background-color: #0d1721;
-    color: #ffffff;
     float:left;
     position: fixed;
     text-align: center;
     width: 15%;
     height: 100%;
 }
-.left_nav a{
-    color: #ffffff;
-}
+
 article{
     width: 85%;
     float:right;
@@ -57,13 +41,6 @@ article>*{
 section{
     text-align: center;
 }
-a {
-    color: #1B5E20;
-}
-a:hover {
-    color: #7CB342;
-}
-
 
 /*Responsive size*/
 /* Extra small devices (phones, 600px and down) */

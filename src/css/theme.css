@@ -1,0 +1,56 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #7CB342;
+}
+header > button{
+    color: #CFD8DC;
+    background-color: #1B5E20;
+}
+.where_to_start{
+    background-color: #0d1721;
+    color: #ffffff;
+}
+.where_to_start > a {
+    color: #ffffff;
+}
+.where_to_start > a:hover {
+    color: #7CB342
+}
+.left_nav{
+    background-color: #0d1721;
+    color: #ffffff;
+}
+.left_nav  a {
+    color: #ffffff;
+}
+.left_nav  a:hover {
+    color: #7CB342
+}
+.index > a {
+    color: #1B5E20;
+}
+.index > a:hover {
+    color: #7CB342;
+}
+.error{
+    background-color: #0d1721;
+    color:#CFD8DC;
+}
+.error > a{
+    color: #7CB342;
+}
+article a {
+    color: #1B5E20;
+}
+article a:hover {
+    color: #7CB342;
+}
+@media (prefers-color-scheme: dark) {
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+    
+}

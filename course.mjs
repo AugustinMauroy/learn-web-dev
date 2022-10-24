@@ -13,9 +13,10 @@ async function course_gen(call_lang, call_type){
                     <meta charset="utf-8"/>
                     <title>${html_title(call_lang, call_type)}</title>
                     <link rel="icon" type="image/svg+xml" href="${icon(call_lang)}" sizes="any">
-                    <link rel="stylesheet" href="../css/style.css"/>
+                    <link rel="apple-touch-icon" type="image/svg+xml" href="${icon(call_lang)}" sizes="any">
+                    <link rel="stylesheet" href="/css/style.css"/>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
-                    <script src="../js/index.js"></script>
+                    <script src="/js/index.js"></script>
                 </head>
                 <body>
                     <header>
@@ -82,7 +83,7 @@ function icon(link){
     case 'css':
         return "/img/css.svg";
     case 'js':
-        return "/img/html.svg";
+        return "/img/js.svg";
     case 'nodejs':
         return "/img/node.svg";
     case 'sql':

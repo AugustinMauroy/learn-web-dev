@@ -58,7 +58,7 @@ async function get_raw_routes(){
 }
 
 /*Get data from 404.html*/
-const error_404 = readFile(`./content/404.html`,(err,data)=>{
+const error_404 = readFileSync(`./content/404.html`,(err,data)=>{
     if (err){
         return '<h1>404</h1>'
     }else{

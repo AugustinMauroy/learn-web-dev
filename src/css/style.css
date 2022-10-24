@@ -54,6 +54,16 @@ article{
 article>*{
     padding-left: 10px;
 }
+section{
+    text-align: center;
+}
+a {
+    color: #1B5E20;
+}
+a:hover {
+    color: #7CB342;
+}
+
 
 /*Responsive size*/
 /* Extra small devices (phones, 600px and down) */

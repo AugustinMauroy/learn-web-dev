@@ -26,8 +26,8 @@ async function blog_content_gen(call){
                         <button onclick="document.location='/sql/what_is_sql'">sql</button>
                     </header>
                     <main>
-                        <h1>${html_title(call)}</h1>
                         <article>
+                            <h1>${html_title(call)}</h1>
                             ${content(call)}
                         </article>
                     </main>

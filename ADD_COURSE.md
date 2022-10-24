@@ -6,12 +6,12 @@ Si vous voulez ajouter un cours il faut suivre plusieurs étapes.
 
 Vous devez respecter le code de conduite du projet. Vous devez écrire à la deuxième personne du singulier ou à la première personne du pluriel.
 
-## road map pour écrire un cour
+## road map pour écrire un cours
 
 * Crée le fichier markdown dans le répertoire convenant (`html`,`css`,`js`,`nodejs`,`sql`).
 * metre les méta data :
 
-```md
+```yml
 ---
 title: "intro_node"
 display_title: "Introduction à Node"

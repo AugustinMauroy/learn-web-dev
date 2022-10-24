@@ -12,6 +12,7 @@ async function course_gen(call_lang, call_type){
                 <head>
                     <meta charset="utf-8"/>
                     <title>${html_title(call_lang, call_type)}</title>
+                    <link rel="icon" type="image/svg+xml" href="${icon(call_lang)}" sizes="any">
                     <link rel="stylesheet" href="../css/style.css"/>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
                     <script src="../js/index.js"></script>
@@ -66,6 +67,26 @@ function left_nav_tile(title){
         return "NodeJS";
     case 'sql':
         return "Le sql";
+    case undefined:
+        return "404"
+    default:
+        return "404";
+    };
+};
+
+/*Select icon*/
+function icon(link){
+    switch (link){
+    case 'html':
+        return "/img/html.svg";
+    case 'css':
+        return "/img/css.svg";
+    case 'js':
+        return "/img/html.svg";
+    case 'nodejs':
+        return "/img/node.svg";
+    case 'sql':
+        return "";
     case undefined:
         return "404"
     default:

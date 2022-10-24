@@ -10,6 +10,11 @@
         "content_type" : "text/html"
     },
     {
+        "call" : "/contact",
+        "path" : "./content/contact.html",
+        "content_type" : "text/html"
+    },
+    {
         "function_call" : "/html/what_is_html",
         "function_name" : "course_gen",
         "function_arg" : ["'html'","'what_is_html'"],

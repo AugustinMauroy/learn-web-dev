@@ -4,9 +4,7 @@ display_title: "Envoyé les donnée d'un fichier à un browser"
 lang: "fr"
 ---
 
-# Envoyé les donnée d'un fichier à un browser
-
-Pour envoyé les donnée stocker dans un fichier il faut le lire c'est pour cela que nous allons utiliser le modul [FS](https://nodejs.dev/en/api/v19/fs/) qui signifie **f**ile **s**ystème.
+Pour envoyé les donnée stocker dans un fichier il faut le lire c'est pour cela que nous allons utiliser le module [FS](https://nodejs.dev/en/api/v19/fs/) qui signifie **f**ile **s**ystème.
 
 ## Comment lire les donnée d'un fichier
 
@@ -73,4 +71,4 @@ const html = fs.readFileSync("./index.html", "utf-8", (err,data)=>{
 
 Nous renvoyons simplement le code html récupérer par la fonction fs.readFileSync au serveur http grâce à la variable html. Si une erreur se produit lors de la lecture du fichier un `<h1>404</h1>` sera renvoyer. Vous pouvez bien sur renvoyer un autre variable 404 qui lit un fichier 404.html.
 
-**Voilà vous avez les rudiment pour les serveur http**
+### Voilà vous avez les rudiment pour les serveur http

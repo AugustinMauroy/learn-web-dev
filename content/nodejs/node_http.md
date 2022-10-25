@@ -4,8 +4,6 @@ display_title: "Serveur http"
 lang: "fr"
 ---
 
-# Serveur http avec nodejs
-
 Nous allons voir tout ce que peux faire nodejs avec le module http.
 
 ## Qu'est ce que http?

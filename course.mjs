@@ -31,9 +31,10 @@ async function course_gen(call_lang, call_type){
                         <h2>${left_nav_tile(call_lang)}</h2>
                         ${left_nav(call_lang)}
                     </nav>
-                    <article>
+                    <main class="course">
+                        <h1>${html_title(call_lang, call_type)}</h1>
                         ${content(call_lang, call_type)}
-                    </article>
+                    </main>
                     <footer>
                         <noscript>Votre navigateur n'accepte pas le JavaScript. Certaines fonctionnalités ne serons pas disponible.</noscript>
                     </footer>

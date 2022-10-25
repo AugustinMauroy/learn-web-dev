@@ -17,3 +17,43 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
+body{
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'footer footer footer footer footer footer';
+    margin: 0; 
+}
+header{
+    grid-area: header;
+    padding: 10px;}
+nav { 
+    grid-area: menu;
+    height: 90vh;
+    padding: 10px;
+    max-width: 200px;
+}
+nav h2{
+    text-align: center;
+}
+nav li{
+    padding: 5px;
+}
+main {
+    grid-area: main;
+    padding: 10px;
+}
+footer {
+    grid-area: footer;
+    padding: 10px;
+}
+header > button{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    height: 64px;
+}

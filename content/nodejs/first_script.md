@@ -4,9 +4,7 @@ display_title: "Premier script avec nodejs"
 lang: "fr"
 ---
 
-# Premier script avec nodejs
-
-Nos scripts peuvent être écrits dans des fichiers `.js` ou `.mjs`. 
+Nos scripts peuvent être écrits dans des fichiers `.js` ou `.mjs`.
 Cela évidemment peut changer un petit peu la syntax mais la logic reste la même.
 
 ## Qu'est-ce qu'un module dans Node.js ?

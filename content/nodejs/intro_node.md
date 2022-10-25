@@ -4,8 +4,6 @@ display_title: "Introduction à Node"
 lang: "fr"
 ---
 
-# Qu'est ce que nodejs?
-
 Node.js est un environnement d'exécution JavaScript gratuit, ouvert et multiplatform qui permet aux développeurs d'écrire des outils en ligne de commande et des scripts côté serveur, en dehors d'un navigateur.
 
 ## Que peut faire Node.js ?

@@ -12,8 +12,8 @@ async function blog_content_gen(call){
                 <head>
                     <meta charset="utf-8"/>
                     <title>${html_title(call)}</title>
-                    <link rel="stylesheet" href="/css/style.css"/>
-                    <link href="./css/theme.css" rel="stylesheet">
+                    <link href="/css/style_blog.css" rel="stylesheet"/>
+                    <link href="/css/theme.css" rel="stylesheet">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
                     <script src="../js/index.js"></script>
                 </head>
@@ -27,7 +27,7 @@ async function blog_content_gen(call){
                         <button onclick="document.location='/sql/what_is_sql'">sql</button>
                     </header>
                     <main>
-                        <article>
+                        <article class="blog">
                             <h1>${html_title(call)}</h1>
                             ${content(call)}
                         </article>

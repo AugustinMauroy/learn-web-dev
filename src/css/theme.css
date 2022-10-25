@@ -44,11 +44,24 @@ header > button{
 .error > a:hover{
     color: #1B5E20;
 }
-article a {
-    color: #1B5E20;
+.blog{
+    background-color: #0d1721;
+    color: #ffffff;
 }
-article a:hover {
-    color: #7CB342;
+.blog > a {
+    color: #ffffff;
+}
+.blog > a:hover {
+    color: #7CB342
+}
+footer {
+    background-color: #7CB342;
+}
+footer > a {
+    color: #ffffff;
+}
+footer > a:hover {
+    color: #1B5E20
 }
 @media (prefers-color-scheme: dark) {
 

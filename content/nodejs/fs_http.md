@@ -9,7 +9,7 @@ Pour envoyé les donnée stocker dans un fichier il faut le lire c'est pour cela
 ## Comment lire les donnée d'un fichier
 
 Comme dit nous allons utiliser le module `FS` qui est inclut de base dans nodejs.
-Pour l'importer dans votre script (si vous n'avez pas encore fait de script avec node allez voir [ceci](/nodejs/first_script)) nous allons écrire ceci. (Tout cela est dans la syntaxe ECMA)
+Pour l'importer dans votre script (si vous n'avez pas encore fait de script avec node allez voir [ceci](/nodejs/first_script)) nous allons écrire ceci. (Tout cela est dans la syntaxe [ECMA](/blog/Ecma))
 
 ```mjs
 import fs from 'node:fs';

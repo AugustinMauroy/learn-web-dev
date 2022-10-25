@@ -36,7 +36,9 @@ async function course_gen(call_lang, call_type){
                         ${content(call_lang, call_type)}
                     </main>
                     <footer>
+                        <!-- Si le browser ne support pas le javascript -->
                         <noscript>Votre navigateur n'accepte pas le JavaScript. Certaines fonctionnalités ne serons pas disponible.</noscript>
+                        <a href="https://github.com/AugustinMauroy/learn_web_dev" target="_blank">Github</a>
                     </footer>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
                     <script>hljs.highlightAll();</script>

@@ -29,7 +29,9 @@ async function blog_index_gen(){
                         ${await content()}
                     </main>
                     <footer>
+                        <!-- Si le browser ne support pas le javascript -->
                         <noscript>Votre navigateur n'accepte pas le JavaScript. Certaines fonctionnalités ne serons pas disponible.</noscript>
+                        <a href="https://github.com/AugustinMauroy/learn_web_dev" target="_blank">Github</a>
                     </footer>
                 </body>
             </html>`;

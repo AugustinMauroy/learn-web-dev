@@ -28,10 +28,10 @@ header > button{
 .left_nav  a:hover {
     color: #7CB342
 }
-.index > a {
+.index  a {
     color: #1B5E20;
 }
-.index > a:hover {
+.index  a:hover {
     color: #7CB342;
 }
 .error{
@@ -40,6 +40,9 @@ header > button{
 }
 .error > a{
     color: #7CB342;
+}
+.error > a:hover{
+    color: #1B5E20;
 }
 article a {
     color: #1B5E20;

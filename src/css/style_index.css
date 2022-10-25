@@ -32,3 +32,11 @@ footer {
     grid-area: footer;
     padding: 10px;
 }
+
+.error{
+    grid-area: main;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}

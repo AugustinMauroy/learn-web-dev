@@ -9,6 +9,9 @@ header > button{
     background-color: #1B5E20;
 }
 @media (prefers-color-scheme: dark) {
+    body{
+        background-color: #546E7A;
+    }
     .where_to_start{
         background-color: #0d1721;
         color: #ffffff;
@@ -18,6 +21,9 @@ header > button{
     }
     .where_to_start > a:hover {
         color: #7CB342
+    }
+    .vague{
+            background-color: #546E7A;
     }
     .left_nav{
         background-color: #0d1721;
@@ -30,10 +36,10 @@ header > button{
         color: #7CB342
     }
     .index  a {
-        color: #1B5E20;
+        color: #7CB342;
     }
     .index  a:hover {
-        color: #7CB342;
+        color: #1B5E20;
     }
     .error{
         background-color: #0d1721;
@@ -73,6 +79,9 @@ header > button{
 }
 
 @media screen and (prefers-color-scheme: light) {
+    .vague{
+        background-color:#ffffff
+    }
     .where_to_start{
         background-color: #0d1721;
         color: #ffffff;

@@ -12,7 +12,7 @@ async function blog_index_gen(){
                 <head>
                     <meta charset="utf-8"/>
                     <title>Blog</title>
-                    <link rel="stylesheet" href="/css/style.css"/>
+                    <link href="/css/style_blog.css" rel="stylesheet"/>
                     <link href="./css/theme.css" rel="stylesheet">
                     <script src="../js/index.js"></script>
                 </head>
@@ -48,7 +48,7 @@ async function content(){
             var title = metaData.title;
             var display_title = metaData.display_title;
             var description = metaData.description;
-            html += `<article>
+            html += `<article class="blog">
                         <h2>${display_title}</h2>
                         <p>${description}</p>
                         <a href="blog/${title}">${display_title}</a>

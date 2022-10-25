@@ -97,8 +97,18 @@
         "content_type" : "text/javascript"
     },
     {
-        "call" : "/css/style.css",
-        "path" : "./src/css/style.css",
+        "call" : "/css/style_index.css",
+        "path" : "./src/css/style_index.css",
+        "content_type" : "text/css"
+    },
+    {
+        "call" : "/css/style_course.css",
+        "path" : "./src/css/style_course.css",
+        "content_type" : "text/css"
+    },
+    {
+        "call" : "/css/style_blog.css",
+        "path" : "./src/css/style_blog.css",
         "content_type" : "text/css"
     },
     {

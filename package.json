@@ -2,13 +2,13 @@
   "name": "course",
   "version": "1.2.0",
   "description": "This project aims to provide courses to learn web development.",
-  "main": "http.mjs",
+  "main": "main.js",
   "scripts": {
-    "start": "node http.mjs"
+    "start": "node main.js"
   },
   "author": "AugustinMauroy",
-  "license": "ISC",
-
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
     "markdown-it": "^13.0.1",
     "markdown-it-meta": "^0.0.1"

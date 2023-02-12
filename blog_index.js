@@ -1,20 +1,22 @@
-/*Importation des modules*/
-import { readdirSync, readFileSync }    from 'fs';
-import path                             from 'path';
-import mdMeta                           from 'markdown-it-meta';
-import mdImport                         from 'markdown-it';
-const md = mdImport({html: false,linkify: true,typographer: true}).use(mdMeta);
+import * as fs from 'node:fs';
+import path from 'path';
+import mdMeta from 'markdown-it-meta';
+import mdImport from 'markdown-it';
+const md = mdImport({html: false, linkify: true, typographer: true}).use(mdMeta);
 
-/*export function qui crée les cours*/
-async function blog_index_gen(){
+/**
+ * 
+ * @returns { string } html
+ */
+async function blogIndexGen(){
     return`<!DOCTYPE html>
             <html>
                 <head>
                     <meta charset="utf-8"/>
                     <title>Blog</title>
                     <link href="/css/style_blog.css" rel="stylesheet"/>
-                    <link href="./css/theme.css" rel="stylesheet">
-                    <script src="../js/index.js"></script>
+                    <link href="/css/theme.css" rel="stylesheet">
+                    <script src="/js/index.js"></script>
                 </head>
                 <body>
                     <header>
@@ -37,28 +39,28 @@ async function blog_index_gen(){
             </html>`;
 };
 
-/*Generate Content*/
+/**
+ * 
+ * @returns { string } html
+ * @description read all the file in the folder content/blog and return the html of the blog index
+ */
 async function content(){
-    var files = readdirSync('./content/blog');
-    var html = ``  
-    files.forEach(file => { 
-             
+    const files = fs.readdirSync('./content/blog');
+    let html = ``  
+    files.forEach(async file => { 
         if (path.extname(file) == ".md"){
-            var rawMd = readFileSync(`./content/blog/${file}`, 'utf8');
+            var rawMd = fs.readFileSync(`./content/blog/${file}`, 'utf8');
             var markdown = md.render(rawMd);
             var metaData = md.meta;
-            var title = metaData.title;
-            var display_title = metaData.display_title;
-            var description = metaData.description;
             html += `<article class="blog">
-                        <h2>${display_title}</h2>
-                        <p>${description}</p>
-                        <a href="blog/${title}">${display_title}</a>
+                        <h2>${metaData.display_title}</h2>
+                        <p>${metaData.description}</p>
+                        <a href="blog/${metaData.title}">${metaData.display_title}</a>
                      </article>`
         }
     });
     return html
 };
 
-/*Export html of course*/
-export {blog_index_gen};
+export { blogIndexGen };
+export default blogIndexGen;

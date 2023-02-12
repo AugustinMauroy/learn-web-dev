@@ -1,17 +1,19 @@
-/*Importation des modules*/
-import { readFileSync }    from 'fs';
-import path                             from 'path';
-import mdMeta                           from 'markdown-it-meta';
-import mdImport                         from 'markdown-it';
-const md = mdImport({html: false,linkify: true,typographer: true}).use(mdMeta);
+import * as fs from 'node:fs';
+import mdMeta from 'markdown-it-meta';
+import mdImport from 'markdown-it';
+const md = mdImport({html: false, linkify: true, typographer: true}).use(mdMeta);
 
-/*export function qui crée les cours*/
-async function blog_content_gen(call){
+/**
+ * 
+ * @param { string } call 
+ * @returns { string } html
+ */
+async function blogContentGen(call){
     return`<!DOCTYPE html>
-            <html>
+            <html lang="fr">
                 <head>
                     <meta charset="utf-8"/>
-                    <title>${html_title(call)}</title>
+                    <title>${ await htmlTitle(call) }</title>
                     <link href="/css/style_blog.css" rel="stylesheet"/>
                     <link href="/css/theme.css" rel="stylesheet">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/dark.min.css">
@@ -28,13 +30,13 @@ async function blog_content_gen(call){
                     </header>
                     <main>
                         <article class="blog">
-                            <h1>${html_title(call)}</h1>
-                            ${content(call)}
+                            <h1>${ await htmlTitle(call) }</h1>
+                            ${ await content(call) }
                         </article>
                     </main>
                     <footer>
                         <noscript>Votre navigateur n'accepte pas le JavaScript. Certaines fonctionnalités ne serons pas disponible.</noscript>
-                        <p>Date de sortie: <time>${get_time(call)}</time></p>
+                        <p>Date de sortie: <time>${ await getTime(call) }</time></p>
                         <a href="/blog">Retour à la liste des post</a> | <a href="https://github.com/AugustinMauroy/learn_web_dev" target="_blank">Github</a>
                     </footer>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
@@ -43,52 +45,45 @@ async function blog_content_gen(call){
             </html>`;
 };
 
-/*Generate Content*/
-function content(path){
+/**
+ * 
+ * @param { path } path 
+ * @returns { string } html
+ */
+async function content(path){
     return md.render(
-    readFileSync(`./content/blog/${path}.md`, 'utf8',function (error,data){
-        if (error){
-            return "<h1>Un problème est survenu.</h1>"
-        }else{
-            return data
-        };
-    })
+        fs.readFileSync(`./content/blog/${path}.md`, 'utf8')
     );
 };
 
-/*Generate date of blog*/
-function get_time(path){
-    var rawMd = readFileSync(`./content/blog/${path}.md`, 'utf8', (err, data)=>{
-        if(err){
-            return 'error'
-        }else{
-            return data
-        }
-    });
-    if (rawMd === 'error'){
-        return 'error'
-    }
-    var html = md.render(rawMd);
-    var metaData = md.meta
+/**
+ * 
+ * @param { path } path 
+ * @returns { string } date
+ */
+async function getTime(path){
+    const rawMd = fs.readFileSync(`./content/blog/${path}.md`, 'utf8');
+    const html = md.render(rawMd);
+    const metaData = md.meta
     return metaData.date;
 }
 
-/*Generate html title*/
-function html_title(path){
-    var rawMd = readFileSync(`./content/blog/${path}.md`, 'utf8', (err, data)=>{
-        if(err){
-            return 'error'
-        }else{
-            return data
-        }
-    });
-    if (rawMd === 'error'){
-        return 'error'
-    }
-    var html = md.render(rawMd);
-    var metaData = md.meta
+/**
+ * 
+ * @param { path } path 
+ * @returns { string } html
+ */
+function htmlTitle(path){
+    const rawMd = fs.readFileSync(`./content/blog/${path}.md`, 'utf8');
+    const html = md.render(rawMd);
+    const metaData = md.meta
     return metaData.display_title;
 };
 
-/*Export html of course*/
-export {blog_content_gen};
+/**
+ * 
+ * @param { path } path
+ * @returns { string } html
+ */
+export { blogContentGen };
+export default blogContentGen;

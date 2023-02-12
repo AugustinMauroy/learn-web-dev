@@ -16,73 +16,73 @@
     },
     {
         "function_call" : "/html/what_is_html",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'html'","'what_is_html'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/css/what_is_css",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'css'","'what_is_css'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/js/what_is_js",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'js'","'what_is_js'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/nodejs/intro_node",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'nodejs'","'intro_node'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/nodejs/first_script",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'nodejs'","'first_script'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/nodejs/node_http",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'nodejs'","'node_http'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/nodejs/fs_http",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'nodejs'","'fs_http'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/sql/what_is_sql",
-        "function_name" : "course_gen",
+        "function_name" : "courseGen",
         "function_arg" : ["'sql'","'what_is_sql'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/blog",
-        "function_name" : "blog_index_gen",
+        "function_name" : "blogIndexGen",
         "function_arg" : [],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/blog/start_blog",
-        "function_name" : "blog_content_gen",
+        "function_name" : "blogContentGen",
         "function_arg" : ["'start_blog'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/blog/highlight_js",
-        "function_name" : "blog_content_gen",
+        "function_name" : "blogContentGen",
         "function_arg" : ["'highlight_js'"],
         "content_type" : "text/html"
     },
     {
         "function_call" : "/blog/ecma",
-        "function_name" : "blog_content_gen",
+        "function_name" : "blogContentGen",
         "function_arg" : ["'ecma'"],
         "content_type" : "text/html"
     },

@@ -1,7 +1,3 @@
----
-version: 'release'
----
-
 # Course site project
 
 This project aims to provide courses to learn web development.
